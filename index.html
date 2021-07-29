@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="./lib/bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="./lib/bootstrap/popper.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c9f5070d1e.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top position-sticky">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!-- Menu bar Responsive -->
+                <a class="navbar-logo" href="#"><img src="./assets/tiem-vai-anh-minh_thumb.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav"
+                    aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="">
+                        <i class="fas fa-bars" style="color:#f2aa4b; font-size:28px;"></i>
+                    </span>
+                </button>
+                </button>
+                <!-- Nav top menu -->
+                <div class="collapse navbar-collapse navbar-menu">
+                    <div class="menu-right ml-auto d-flex">
+                        <div class="search-box">
+                            <form class="d-flex">
+                                <input class="form-control border-0 btn-outline-light" type="search"
+                                    placeholder="Nhập từ khóa tìm kiếm..." aria-label="Search">
+                                <button class="btn btn-outline-secondary mr-2" type="submit"><i
+                                        class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="social-box">
+                            <ul class="social-box-list list-unstyled d-flex">
+                                <li class="mr-2"><a href="" style="font-size: 32px;"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li><a href="" style="font-size: 32px;"><i class="fab fa-youtube text-danger"></i></a>
+                                </li>
+                                <li class="mr-2"><a href=""><img src="./assets/zalo.png" width="32px"></a></li>
+                            </ul>
+                        </div>
+                        <div class="require-button">
+                            <button type="button" class="btn-style ml-3" data-toggle="modal" data-target="#myModal">
+                                Yêu cầu báo giá
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="myModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid bg-light">
+            <div class="container">
+                <nav class="collapse navbar-collapse navbar-menu d-lg-flex d-xl-flex" id="mynav">
+                    <!-- Menu-left -->
+                    <a class="nav-link navbar-top-link" href="#">Trang chủ</a>
+                    <a class="nav-link navbar-top-link" href="#">Giới thiệu</a>
+                    <a class="nav-link navbar-top-link" href="#">Sản phẩm</a>
+                    <a class="nav-link navbar-top-link" href="#">Tin tức</a>
+                    <a class="nav-link navbar-top-link" href="#">Tư vấn</a>
+                    <a class="nav-link navbar-top-link" href="#">Liên hệ</a>
+
+                    <!-- Menu-right -->
+                    <div class="nav navbar-top-right">
+                        <a href="tel:0934084426"><i class="fas fa-phone-alt mr-2"></i>Hotline: 0934084426</a>
+                    </div>
+                    <div class="social-box d-lg-none">
+                        <ul class="social-box-list list-unstyled d-flex">
+                            <li class="mr-2"><a href="" style="font-size: 32px;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li><a href="" style="font-size: 32px;"><i class="fab fa-youtube text-danger"></i></a>
+                            </li>
+                            <li class="mr-2"><a href=""><img src="./assets/zalo.png" width="32px"></a></li>
+                        </ul>
+                    </div>
+                    <div class="require-button d-lg-none">
+                        <button type="button" class="btn-style ml-3" data-toggle="modal" data-target="#myModal">
+                            Yêu cầu báo giá
+                        </button>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!-- Banner -->
+    <section>
+        <div class="container-fluid">
+            <div id="circle" class="carousel slide banner" data-ride="carousel">
+
+                <ul class="carousel-indicators mt-4">
+                    <li class="banner-circle" data-target="#circle" data-slide-to="0" class="active"></li>
+                    <li class="banner-circle" data-target="#circle" data-slide-to="1"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/tiem-vai-anh-minh1_thumb.jpg" width="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/tiem-vai-anh-minh1_thumb.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Kind of  -->
+    <section>
+        <div class="container-fluid kindof">
+            <div class="title text-center">
+                <h1>Top 6 loại vải bán chạy </h1>
+                <p>Đáp ứng đầy đủ nhu cầu tùy chọn bán buôn của bạn</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                    <h5>Rib Fabric</h5>
+                    <hr>
+                    <img src="./assets/cate12_thumb.png" width="100%">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                    <h5>Pique</h5>
+                    <hr>
+                    <img src="./assets/cate2_thumb.png" width="100%">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                    <h5>Flannelette</h5>
+                    <hr>
+                    <img src="./assets/cate3_thumb.png" width="100%">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                    <h5>Double Scuba Knit</h5>
+                    <hr>
+                    <img src="./assets/cate4_thumb.png" width="100%">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                    <h5>Spandex Single Jersey</h5>
+                    <hr>
+                    <img src="./assets/cate5_thumb.png" width="100%">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                    <h5>Single Jersey</h5>
+                    <hr>
+                    <img src="./assets/cate6_thumb.png" width="100%">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Product  -->
+    <section>
+        <div class="container ">
+            <div class="title text-center">
+                <h1>SẢN PHẨM MỚI</h1>
+                <p>Đáp ứng đầy đủ nhu cầu tùy chọn bán buôn của bạn</p>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        <img src="./assets/vai-loai-double-scuba-knit-0018_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-0017">
+                        <img src="./assets/vai-loai-double-scuba-knit-0017_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-0017">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        <img src="./assets/vai-loai-double-scuba-knit-0015_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        <img src="./assets/vai-loai-double-scuba-knit-0014_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        <img src="./assets/vai-loai-double-scuba-knit-0013_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        <img src="./assets/vai-loai-double-scuba-knit-0012_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        <img src="./assets/vai-loai-double-scuba-knit-0011_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6" id="product-item">
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        <img src="./assets/vai-loai-double-scuba-knit-001_thumb.jpg" width="100%" height="85%">
+                    </a>
+                    <a href="http://vaianhminh.optechdemo2.com/vai-loai-double-scuba-knit-008">
+                        Vải loại Double Scuba Knit 001
+                    </a>
+                </div>
+            </div>
+            <a class="view_more" href="">Xem thêm sản phẩm</a>
+        </div>
+    </section>
+    <!-- About Us -->
+    <section>
+        <div class="jumbotron about_us"
+            style="background-image: url(./assets/bg-about.jpg); background-size:cover;background-position: center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="video">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/gZxPqkf0MVk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="content content-us text-white">
+                            <div class="title">
+                                <h1>Về chúng tôi</h1>
+                                <p>Yêu cầu của bạn và chuyên môn của chúng tôi</p>
+                            </div>
+                            <ul>
+                                <li><a href="">Nhà máy dệt</a></li>
+                                <li><a href="">Hệ thống cửa hàng</a></li>
+                                <li><a href="">Xưởng sản xuất</a></li>
+                                <li><a href="">Hồ sơ năng lực</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Choose -->
+    <section>
+        <div class="container choose">
+            <div class="jumbotron choose-header" style="background-image: url(./assets/bg-why_thumb.jpg)">
+                <div class="choose-header-title">
+                    <h1>LÝ DO ĐỂ CHỌN CHÚNG TÔI</h1>
+                    <p class="lead">Yêu cầu của bạn và chuyên môn của chúng tôi</p>
+                </div>
+            </div>
+            <div class="choose-content">
+                <div class="row" style="margin-bottom: 100px;">
+                    <div class="col-xl-6">
+                        <img src="./assets/why1_thumb.jpg" width="100%">
+                        <h5>Nhà sản xuất mạnh cung cấp sự bảo vệ mạnh mẽ cho doanh nghiệp</h5>
+                    </div>
+                    <div class="col-xl-6">
+                        <p class="text-secondary">Chúng tôi có thẩm quyền đối với các nhà máy dệt, nhuộm và kết hợp.</p>
+                        <p>Nhà máy dệt có 158 máy dệt kim tròn với công suất sản xuất hàng năm là 23.000 tấn.</p>
+                        <p>Nhà máy nhuộm có 9 máy đóng rắn với công suất sản xuất hàng năm khoảng 22.000 tấn.</p>
+                        <p>Nhà máy hỗn hợp có ba dây chuyền sản xuất hỗn hợp với công suất sản xuất hàng năm khoảng
+                            10.000
+                            tấn.</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 100px;">
+                    <div class="col-xl-6">
+                        <p class="text-secondary">Chúng tôi có thẩm quyền đối với các nhà máy dệt, nhuộm và kết hợp.</p>
+                        <p>Nhà máy dệt có 158 máy dệt kim tròn với công suất sản xuất hàng năm là 23.000 tấn.</p>
+                        <p>Nhà máy nhuộm có 9 máy đóng rắn với công suất sản xuất hàng năm khoảng 22.000 tấn.</p>
+                        <p>Nhà máy hỗn hợp có ba dây chuyền sản xuất hỗn hợp với công suất sản xuất hàng năm khoảng
+                            10.000
+                            tấn.</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="./assets/why2_thumb.jpg" width="100%">
+                        <h5>Nhà sản xuất mạnh cung cấp sự bảo vệ mạnh mẽ cho doanh nghiệp</h5>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 100px;">
+                    <div class="col-xl-6">
+                        <img src="./assets/why3_thumb.jpg" width="100%">
+                        <h5>Nhà sản xuất mạnh cung cấp sự bảo vệ mạnh mẽ cho doanh nghiệp</h5>
+                    </div>
+                    <div class="col-xl-6">
+                        <p class="text-secondary">Chúng tôi có thẩm quyền đối với các nhà máy dệt, nhuộm và kết hợp.</p>
+                        <p>Nhà máy dệt có 158 máy dệt kim tròn với công suất sản xuất hàng năm là 23.000 tấn.</p>
+                        <p>Nhà máy nhuộm có 9 máy đóng rắn với công suất sản xuất hàng năm khoảng 22.000 tấn.</p>
+                        <p>Nhà máy hỗn hợp có ba dây chuyền sản xuất hỗn hợp với công suất sản xuất hàng năm khoảng
+                            10.000
+                            tấn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Survey -->
+    <section>
+        <div class="container">
+            <div class="title text-center">
+                <h3>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h3>
+                <p>Khách hàng nói gì về chúng tôi</p>
+            </div>
+            <div id="demo" class="survey-carousel carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                    <li class="survey-carousel- " data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li class="survey-carousel-" data-target="#demo" data-slide-to="1"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row mb-4">
+                            <div class="col-xl-4">
+                                <div class="survey">
+                                    <div class="survey-header d-flex">
+                                        <div style="width: 30%;">
+                                            <img class="card-img-top" src="./assets/le-tran-bao-minh1_thumb.jpg">
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5>Lê Trần Bảo Minh</h5>
+                                            <p>Kinh doanh tự do</p>
+                                        </div>
+                                    </div>
+                                    <div class="survey-body">
+                                        <p class="card-text">
+                                            Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                            chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="survey">
+                                    <div class="survey-header d-flex">
+                                        <div style="width: 30%;">
+                                            <img class="card-img-top" src="./assets/le-tran-bao-minh2_thumb.jpg"
+                                                alt="Card image cap">
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5>Trần Thị Hà Mi</h5>
+                                            <p>Nhân viên thiết kế</p>
+                                        </div>
+                                    </div>
+                                    <div class="survey-body">
+                                        <p class="card-text">
+                                            Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                            chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="survey ">
+                                    <div class="survey-header d-flex">
+                                        <div style="width: 30%;">
+                                            <img class="card-img-top" src="./assets/le-tran-bao-minh3_thumb.jpg"
+                                                alt="Card image cap">
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5>Lê Thị Thu Thảo</h5>
+                                            <p>Kinh doanh online</p>
+                                        </div>
+                                    </div>
+                                    <div class="survey-body">
+                                        <p class="card-text">
+                                            Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                            chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-xl-4">
+                                <div class="survey ">
+                                    <div class="survey-header d-flex">
+                                        <div style="width: 30%;">
+                                            <img class="card-img-top" src="./assets/le-tran-bao-minh3_thumb.jpg"
+                                                alt="Card image cap">
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5>Lê Thị Thu Thảo</h5>
+                                            <p>Kinh doanh online</p>
+                                        </div>
+                                    </div>
+                                    <div class="survey-body">
+                                        <p class="card-text">
+                                            Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                            chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="survey">
+                                    <div class="survey-header d-flex">
+                                        <div style="width: 30%;">
+                                            <img class="card-img-top" src="./assets/le-tran-bao-minh1_thumb.jpg">
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5>Lê Trần Bảo Minh</h5>
+                                            <p>Kinh doanh tự do</p>
+                                        </div>
+                                    </div>
+                                    <div class="survey-body">
+                                        <p class="card-text">
+                                            Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                            chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="survey">
+                                    <div class="survey-header d-flex">
+                                        <div style="width: 30%;">
+                                            <img class="card-img-top" src="./assets/le-tran-bao-minh2_thumb.jpg"
+                                                alt="Card image cap">
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5>Trần Thị Hà Mi</h5>
+                                            <p>Nhân viên thiết kế</p>
+                                        </div>
+                                    </div>
+                                    <div class="survey-body">
+                                        <p class="card-text">
+                                            Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                            chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Information -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="title d-flex align-items-center">
+                        <h3>GÓC CHIA SẼ</h3>
+                        <ul class="carousel-indicators info-indicators">
+                            <i class="fas fa-chevron-left mr-2" data-target="#info-carousel" data-slide-to="0"
+                                class="active"></i>
+                            <i class="fas fa-chevron-right" data-target="#info-carousel" data-slide-to="1"></i>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="info-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row mb-4">
+                                    <div class="col-xl-6">
+                                        <div class="info">
+                                            <div class="info-header">
+                                                <div class="info-header-img">
+                                                    <img
+                                                        src="./assets/quan-short-bermuda-quay-tro-lai-trong-mua-he-20211_thumb.jpg">
+                                                </div>
+                                                <div class="info-header-content">
+                                                    <h5>Sắm liền những items đồ bộ này để sẵn sàng đẹp ngay khi ở nhà!
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <p class="card-text">
+                                                    Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                                    chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+
+                                                <div class="info-body-content">
+                                                    <p class="text-secondary">16/06/2021</p>
+                                                    <a href="">Xem Thêm</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="info">
+                                            <div class="info-header">
+                                                <div class="info-header-img">
+                                                    <img
+                                                        src="./assets/sam-lien-nhung-items-do-bo-nay-de-san-sang-dep-ngay-khi-o-nha_thumb.jpg">
+                                                </div>
+                                                <div class="info-header-content">
+                                                    <h5>Sắm liền những items đồ bộ này để sẵn sàng đẹp ngay khi ở nhà!
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <p class="card-text">
+                                                    Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                                    chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+
+                                                <div class="info-body-content">
+                                                    <p class="text-secondary">16/06/2021</p>
+                                                    <a href="">Xem Thêm</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row mb-4">
+                                    <div class="col-xl-6">
+                                        <div class="info">
+                                            <div class="info-header">
+                                                <div class="info-header-img">
+                                                    <img
+                                                        src="./assets/cach-phoi-do-di-choi-bat-trend-de-dang-chi-voi-3-phut_thumb.jpg">
+                                                </div>
+                                                <div class="info-header-content">
+                                                    <h5>Sắm liền những items đồ bộ này để sẵn sàng đẹp ngay khi ở nhà!
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <p class="card-text">
+                                                    Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                                    chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+
+                                                <div class="info-body-content">
+                                                    <p class="text-secondary">16/06/2021</p>
+                                                    <a href="">Xem Thêm</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="info">
+                                            <div class="info-header">
+                                                <div class="info-header-img">
+                                                    <img
+                                                        src="./assets/hang-sieu-xe-ferrari-xam-nhap-vao-linh-vuc-thoi-trang-day-bat-ngo_thumb.jpg">
+                                                </div>
+                                                <div class="info-header-content">
+                                                    <h5>Sắm liền những items đồ bộ này để sẵn sàng đẹp ngay khi ở nhà!
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <p class="card-text">
+                                                    Chất lượng sản phẩm ở đây rất ok, nhân viên tư vấn rất nhiệt tình và
+                                                    chi tiết. Nói chung rất hài sản phẩm của Tiệm vải Ánh Minh. </p>
+
+                                                <div class="info-body-content">
+                                                    <p class="text-secondary">16/06/2021</p>
+                                                    <a href="">Xem Thêm</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="title d-flex align-items-center">
+                        <h3>TIN CÔNG TY</h3>
+                        <ul class="carousel-indicators info-indicators">
+                            <i class="fas fa-chevron-left mr-2" data-target="#info-carousel-02" data-slide-to="0"
+                                class="active"></i>
+                            <i class="fas fa-chevron-right" data-target="#info-carousel-02" data-slide-to="1"></i>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="info-carousel-02" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="info">
+                                    <div class="info-header">
+                                        <div class="info-header-img">
+                                            <img
+                                                src="./assets/trang-phuc-olympic-duoi-ban-tay-cua-cac-nha-thiet-ke-danh-tieng_thumb.jpg">
+                                        </div>
+                                        <div class="info-header-content">
+                                            <h5>Trang phục Olympic dưới bàn tay của các nhà thiết kế danh tiếng
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="info-body">
+                                        <p class="card-text">
+                                            Trong vòng chưa đầy hai tháng nữa, Thế vận hội Tokyo cuối cùng sẽ diễn ra
+                                            sau khi năm ngoái bị hoãn do dịch COVID-19. </p>
+
+                                        <div class="info-body-content">
+                                            <p class="text-secondary">16/06/2021</p>
+                                            <a href="">Xem Thêm</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="info">
+                                    <div class="info-header">
+                                        <div class="info-header-img">
+                                            <img
+                                                src="./assets/burberry-dua-ra-tuyen-bo-manh-me-ve-dinh-huong-ben-vung_thumb.jpg">
+                                        </div>
+                                        <div class="info-header-content">
+                                            <h5>Burberry đưa ra tuyên bố mạnh mẽ về định hướng bền vững
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="info-body">
+                                        <p class="card-text">
+                                            Burberry đang đưa ra một tuyên bố táo bạo và lần này, nó không phải là một
+                                            bộ sưu tập mới hấp dẫn. Nhà mốt đang đặt ra một sáng kiến ​​mới để trở nên…
+                                        </p>
+
+                                        <div class="info-body-content">
+                                            <p class="text-secondary">16/06/2021</p>
+                                            <a href="">Xem Thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Footer  -->
+    <footer class="text-lg-start"
+        style="background-image: url(./assets/bg-footer.jpg); background-size: cover;background-position: center;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-xl-3 mt-3">
+                    <img class="mb-2 footer-logo" src="./assets/tiem-vai-anh-minh_thumb.jpg" width="50%">
+                    <p class="text-white">Muốn bán hàng online lấy hàng ở đâu? Bật mí nguồn hàng nhập sỉ để bán online
+                        mà bất cứ dân</p>
+                </div>
+                <div class="col-xl-4  mt-3">
+                    <h5 class="text-uppercase mb-0 text-white">Tiệm vải Ánh Minh</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="tel:0934084426" class="text-white">SĐT: 0934084426</a>
+                        </li>
+                        <li>
+                            <a href="mailto:hieu.optech@gmail.com" class="text-white">Email: hieu.optech@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/78+%C4%90%E1%BA%B7ng+V%C4%83n+Bi,+B%C3%ACnh+Th%E1%BB%8D,+Th%E1%BB%A7+%C4%90%E1%BB%A9c,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/data=!4m2!3m1!1s0x317527a5b5629e85:0xb48bdfcc6327d9f8?sa=X&ved=2ahUKEwjO3vK-i4XyAhXCdCsKHfi5Ak0Q8gEwAHoECAYQAQ"
+                                class="text-white" target="_blank">
+                                Địa chỉ: 78 Đặng Văn Bi, Bình Thọ, Thủ Đức, HCM</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3  mt-3 text-white">
+                    <h5 class="text-uppercase">CHÍNH SÁCH & HỖ TRỢ</h5>
+                    <ul class="mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Hướng dẫn thanh toán</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Câu hỏi thường gặp</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Liên hệ mua hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2  mt-3">
+                    <div class="info-facebook">
+                        <div class="info-facebook-header">
+                            <a class="text-white mr-1" href="https://www.facebook.com/optechcty/" target="_blank"><img
+                                    src="./assets/logo-link-footer.jpg"></a>
+                            <a class="text-white" href="https://www.facebook.com/optechcty/" target="_blank">
+                                Thiết kế website Trọn Gói - Optech.vn
+                                <p class=""></i>158 lượt thích</p>
+                            </a>
+                        </div>
+                        <div class="info-facebook-like">
+                            <a target="_blank"
+                                href="https://www.facebook.com/plugins/error/confirm/page?iframe_referer=http%3A%2F%2Fvaianhminh.optechdemo2.com%2F&kid_directed_site=false&secure=true&plugin=page&return_params=%7B%22href%22%3A%22facebook.com%2Foptechcty%22%2C%22width%22%3A%22400%22%2C%22height%22%3A%22250%22%2C%22small_header%22%3A%22false%22%2C%22adapt_container_width%22%3A%22true%22%2C%22hide_cover%22%3A%22false%22%2C%22show_facepile%22%3A%22true%22%2C%22appId%22%3Anull%2C%22ret%22%3A%22sentry%22%2C%22act%22%3Anull%7D"><i
+                                    class="fab fa-facebook mr-1"></i>Thích Trang</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="text-white" href="https://optech.vn/">Copyright © 2020 TIỆM VẢI ÁNH MINH . Thiết kế bởi
+                OpTech</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

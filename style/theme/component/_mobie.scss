@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px) {
+    .choose-content {
+        margin: 0px !important
+    }
+    .survey-header {
+        justify-content: center 
+    }
+    .video {
+        margin-bottom: $padding-h;
+    }
+    .footer-logo {
+       display: flex;
+       margin: auto;
+    }
+    .navbar-top-link::after {
+        content: '';
+        display: none;
+    }
+}

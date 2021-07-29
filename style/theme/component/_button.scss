@@ -1,0 +1,39 @@
+.btn {
+    padding: $padding-h $padding-v;
+    border : none;
+}
+
+.action {
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: $black;
+        color     : $white;
+    }
+}
+
+.primary {
+    background: $primary;
+    color     : $secondary;
+}
+
+.btn-style {
+    display         : inline-block;
+    height          : 45px;
+    padding         : $indent;
+    font-weight     : bold;
+    border-radius   : 30px;
+    border          : 2px solid #ffff;
+    background-color: transparent;
+    color           : #ffff;
+    transition      : all 0.2s ease-in;
+    cursor          : pointer;
+    background-color: #e95252;
+
+    &:hover {
+        border-color    : $color-aliz;
+        background-color: $color-aliz;
+
+    }
+}
